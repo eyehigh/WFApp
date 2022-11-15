@@ -1,0 +1,1 @@
+https://learn.microsoft.com/ko-kr/dotnet/standard/data/sqlite/?tabs=netcore-cli
