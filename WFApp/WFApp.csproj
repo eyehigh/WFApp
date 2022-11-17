@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>WFApp.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +14,21 @@
     <PackageReference Include="SQLitePCLRaw.core" Version="2.1.2" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.116" />
     <PackageReference Include="System.Data.SQLite.EF6" Version="1.0.116" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>
